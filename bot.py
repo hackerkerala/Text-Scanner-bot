@@ -39,7 +39,7 @@ def start(update,context):
     keybord1 = [[InlineKeyboardButton("👥 DEVELOPER", url=f"https://t.me/i_am_albin_praveen"),
                  InlineKeyboardButton("Channel ♻️", url="https://t.me/musicwithalby")]]
     reply_markup = InlineKeyboardMarkup(keybord1)
-    update.message.reply_text('Hi! '+str(first)+' \n\nText Scanner OCR Bot ah ka lo lâwm a che.\n\nThlalak fiah fel takin lo thawnla, i Picture chhunga thuziak ho kha ka la chhuak thei!\n\nIla hriatthiam loh fo chuan /help lo thawn rawh.', reply_markup=reply_markup)
+    update.message.reply_text('Hi! '+str(first)+' \n\nText Scanner OCR Bot\n\nSend me any text containing imgaes!\n\nI can convert the text to images.', reply_markup=reply_markup)
 
 def help(update,context):
     """Send a message when the command /help is issued."""
@@ -48,7 +48,7 @@ def help(update,context):
     keybord1 = [[InlineKeyboardButton("👥 DEVELOPER", url=f"https://t.me/i_am_albin_praveen"),
                  InlineKeyboardButton("Channel ♻️", url="https://t.me/musicwithalby")]]
     reply_markup = InlineKeyboardMarkup(keybord1)
-    update.message.reply_text('Hi! '+str(first)+' \n\nHetiang hian aw...\n➥ A hmasain Thlalak fiah tak lo thawn rawh.\n➥ Chuan Language i Select leh ang.\n➥ Chuan Messages in ka Extracted ang!', reply_markup=reply_markup)
+    update.message.reply_text('Hi! '+str(first)+' \n➥ I can convert a text containing image to text file.\n➥Snd he image to extract to text!', reply_markup=reply_markup)
 
 
 @run_async
